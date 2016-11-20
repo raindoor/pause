@@ -1,8 +1,18 @@
 body{
 	background-color: #000;
+	font-family: Lato;
 }
 .introContainer{
   padding: 0;
+}
+.introContainer  .introBg,
+.intro2Container .introBg{
+	position: absolute;
+	top: 99px;
+	left: 662px;
+	width: 1221px;
+	height: 814px;
+	z-index: -1;
 }
 .introContainer .introWords{
   margin: 555px auto 44px auto;
@@ -12,7 +22,6 @@ body{
 }
 .introContainer .introWords h1{
 	margin: 0 0 10px 0;
-	font-family: Lato;
 	font-size: 80px;
 	font-weight: 500;
 	font-style: italic;
@@ -56,24 +65,39 @@ body{
 	color: #ffffff;
 }
 
-/*.introContainer .introWords .wordContainer {
-    background-repeat: repeat-y;
-    -webkit-animation: myanim 8s infinite ease;
+.intro2Container{
+	padding: 0;
+	display: none;
 }
 
-@-webkit-keyframes myanim {
-	0%    { margin-top: 0px; }
-	8%    { margin-top: 0px; }
-	16%    { margin-top: -98px; }
-	24%    { margin-top: -98px; }
-	33%   { margin-top: -196px; }
-	41%   { margin-top: -196px; }
-	50%   { margin-top: -294px; }
-	58%   { margin-top: -294px; }
-	66%   { margin-top: -392px; }
-	74%   { margin-top: -392px; }
-	83%   { margin-top: -490px; }
-  91%   { margin-top: -490px; }
-  99%   { margin-top: -588px; }
-	99.1% { margin-top: 0px; }
-}*/
+.intro2Container .intro2Words h1{
+	margin: 468px auto 75px auto;
+	font-size: 80px;
+	font-weight: 500;
+	font-style: italic;
+	text-align: center;
+	color: #ffffff;
+}
+
+.intro2Container .enter{
+  display: inline-block;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  text-align: center;
+}
+.intro2Container .enter img{
+	width: 230px;
+	display: block;
+	margin: 0 0 38.4px 0;
+}
+.intro2Container .enter span{
+	text-align: center;
+  padding: 0;
+  border: none;
+	font-size: 55px;
+	font-weight: 500;
+	font-style: italic;
+	text-align: center;
+	color: #cbb6a0;
+}
