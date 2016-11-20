@@ -1,0 +1,79 @@
+body{
+	background-color: #000;
+}
+.introContainer{
+  padding: 0;
+}
+.introContainer .introWords{
+  margin: 555px auto 44px auto;
+	display: block;
+	overflow: hidden;
+	height: 93px;
+}
+.introContainer .introWords h1{
+	margin: 0 0 10px 0;
+	font-family: Lato;
+	font-size: 80px;
+	font-weight: 500;
+	font-style: italic;
+	text-align: center;
+  white-space: pre;
+	color: #ffffff;
+}
+.introContainer .introWords h1.word1{
+	display: block;
+}
+.introContainer .introPause{
+  margin: 0 auto;
+  display: block;
+	width: 518px;
+	height: 162px;
+}
+.introContainer .enter{
+  display: inline-block;
+  margin: 0;
+  margin-left: 42px;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  text-align: center;
+}
+.introContainer .enter img{
+  display: block;
+  margin: 0;
+}
+.introContainer .enter span{
+  display: block;
+  margin: 0;
+  margin-left: 10px;
+  padding: 0;
+  border: none;
+	font-family: Lato;
+	font-size: 35px;
+	font-weight: 500;
+	font-style: italic;
+	text-align: left;
+	color: #ffffff;
+}
+
+/*.introContainer .introWords .wordContainer {
+    background-repeat: repeat-y;
+    -webkit-animation: myanim 8s infinite ease;
+}
+
+@-webkit-keyframes myanim {
+	0%    { margin-top: 0px; }
+	8%    { margin-top: 0px; }
+	16%    { margin-top: -98px; }
+	24%    { margin-top: -98px; }
+	33%   { margin-top: -196px; }
+	41%   { margin-top: -196px; }
+	50%   { margin-top: -294px; }
+	58%   { margin-top: -294px; }
+	66%   { margin-top: -392px; }
+	74%   { margin-top: -392px; }
+	83%   { margin-top: -490px; }
+  91%   { margin-top: -490px; }
+  99%   { margin-top: -588px; }
+	99.1% { margin-top: 0px; }
+}*/
