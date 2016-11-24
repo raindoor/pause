@@ -2,10 +2,15 @@ body{
 	background-color: #000;
 	font-family: Lato;
 	color: #fff;
+  overflow-y: scroll;
+  -webkit-overflow-scrolling: touch;
+  height: 800px;
 }
 
 section{
 	padding: 0;
+	/*-webkit-transition: background 2000ms cubic-bezier(.19, 1, .22, 1) 0ms;
+	transition: background 2000ms cubic-bezier(.19, 1, .22, 1) 0ms;*/
 }
 section.gray{
 	background-color: #1b1b1b;
@@ -46,19 +51,21 @@ section.gray{
 }
 
 #About .mainAbout p{
-	font-family: Lato, GonganR;
+	font-family: Core Gothic D;
 	font-size: 70.2px;
+	font-weight: 100;
 	line-height: 1.4;
-	text-align: center;
 }
 #About .mainAbout p .pauseEng{
 	font-size: 97.2px;
 	font-weight: 500;
+	font-family: Lato;
 	font-style: italic;
 	line-height: 1;
 	color: #ffe825;
 }
 #About .mainAbout p .pauseKr{
+	font-family: Core Gothic D;
 	font-size: 48px;
 	line-height: 2.1;
 	color: #ffe825;
@@ -146,8 +153,9 @@ section.gray{
 	padding: 71px 0 157px 0;
 }
 #Tip .title{
-	font-family: GonganM;
+	font-family: Core Gothic D;
 	font-size: 58.5px;
+	font-weight: 200;
 	line-height: 1.4;
 	color: #cbb6a0;
 }
@@ -155,5 +163,23 @@ section.gray{
 	font-family: Noto Sans CJK KR;
 	font-size: 32px;
 	line-height: 1.7;
+	color: #ffffff;
+}
+#Tip .row{
+	margin: 90px 150px;
+}
+#Tip .row > div{
+	padding: 0 37px;
+}
+#Tip .row > div > .imgWrapper{
+	height: 311px;
+	background-color: #d8d8d8;
+	margin-bottom : 90px;
+}
+#Tip .row > div > .description{
+	font-family: Noto Sans CJK kr;
+	font-size: 32px;
+	line-height: 1.7;
+	text-align: center;
 	color: #ffffff;
 }
