@@ -30,9 +30,9 @@
             if (currentY > maxScrollTop) {
                 currentY = vy = 0;
             } else if (currentY < minScrollTop) {
-                    vy = 0;
-                    currentY = minScrollTop;
-                }
+                vy = 0;
+                currentY = minScrollTop;
+            }
 
             container.scrollTop(-currentY);
 

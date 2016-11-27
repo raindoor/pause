@@ -180,6 +180,10 @@
 	font-weight: 500;
 	background-color: #ffe825;
 	border: solid 1px #979797;
+	cursor: pointer;
+}
+#Events a:hover{
+	text-decoration: none;
 }
 #Events .app{
 	margin: 120px 0px;
@@ -191,7 +195,7 @@
 #Events .app.appRight img{
 	float: right;
 }
-#Events .app .img{
+#Events .app img{
 	display: block;
 	height: 470px;
 }

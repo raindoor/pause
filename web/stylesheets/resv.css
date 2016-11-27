@@ -65,6 +65,12 @@ body{
 	font-size: 28px;
   line-height: 60px;
 	letter-spacing: 2.3px;
+  cursor: pointer;
+  -webkit-transition: .2s;
+}
+.select .selectDate div.selected,
+.select .selectDate div:hover{
+  background-color: #c1a283;
 }
 .select .selectTime{
   margin: 46px auto 0 auto;
@@ -133,3 +139,79 @@ body{
   background-position: 0 416px;
   opacity: 1;
 }
+.backgroundGif{
+  z-index: -1;
+  width: 100%;
+  height: 1180px;
+  position: fixed;
+  top: 0;
+  -webkit-transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+}
+.backgroundGif .planeZ{
+  -webkit-transform-style: preserve-3d;
+  -webkit-transition: -webkit-transform .3s ease-out;
+  -webkit-transform-origin: 0 0;
+  position: absolute;
+  pointer-events: none;
+}
+.backgroundGif img{
+  display: block;
+  position: absolute;
+}
+/*.backgroundGif img.idx1{ top: 211px; left: 660px;  width: 298px;}
+.backgroundGif img.idx2{ top: 299px; left: 396px;  width: 223px;}
+.backgroundGif img.idx3{ top: 493px; left: 408px;  width: 172px;}
+.backgroundGif img.idx4{ top: 531px; left: 248px;  width: 294px;}
+.backgroundGif img.idx5{ top: 666px; left: 468px;  width: 220px;}
+.backgroundGif img.idx6{ top: 242px; left: 1103px; width: 176px;}
+.backgroundGif img.idx7{ top: 365px; left: 1330px; width: 355px;}
+.backgroundGif img.idx8{ top: 491px; left: 1436px; width: 291px;}
+.backgroundGif img.idx9{ top: 672px; left: 1356px; width: 191px;}
+.backgroundGif img.idx0{ top: 689px; left: 1112px; width: 292px;}*/
+#planeOverflow {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0px;
+}
+
+#planeRotate {
+    width: 80vw;
+    height: 70vh;
+    -webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    z-index: -100;
+    position: fixed;
+}
+
+#planeZ, .tile {
+    position: absolute
+}
+
+#planeZ {
+    width: 100%;
+    height: 100%;
+    -webkit-transform-style: preserve-3d;
+    -webkit-transition: -webkit-transform .3s ease-out;
+    -webkit-transform-origin: 0 0;
+}
+
+
+.tile img {
+  width: 100%;
+}
+
+
+.idx1{ top: 211px; left: 660px;  width: 298px;}
+.idx2{ top: 299px; left: 396px;  width: 223px;}
+.idx3{ top: 493px; left: 408px;  width: 172px;}
+.idx4{ top: 531px; left: 248px;  width: 294px;}
+.idx5{ top: 666px; left: 468px;  width: 220px;}
+.idx6{ top: 242px; left: 1103px; width: 176px;}
+.idx7{ top: 365px; left: 1330px; width: 355px;}
+.idx8{ top: 491px; left: 1436px; width: 291px;}
+.idx9{ top: 672px; left: 1356px; width: 191px;}
+.idx0{ top: 689px; left: 1112px; width: 292px;}
