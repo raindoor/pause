@@ -1,0 +1,40 @@
+.navbar-custom {
+	padding: 0;
+	margin: 25px 0 270px 0;
+	position: absolute;
+	background-color: transparent;
+}
+.navbar-custom .container {
+	margin: 0 3.65% 0 2%;
+	width: 94.15%;
+}
+.navbar-custom .container .nav{
+	margin-left: 60px;
+}
+.navbar-custom .container .nav li{
+	display: inline-block;
+	padding: 15px 0;
+	color: #ffffff;
+}
+.navbar-custom .container .nav li a{
+	padding: 15px 0;
+	margin: 0 0 0 55px;
+	white-space: pre;
+	background-color: transparent;
+	font-family: Lato;
+	font-size: 31px;
+	font-weight: 500;
+	font-style: italic;
+	line-height: 0.6;
+	letter-spacing: 2.7px;
+	opacity: 0.85;
+	color: #ffffff;
+}
+.navbar-custom .container .nav li a:hover{
+	background-color: transparent;
+	color: #ffffff;
+}
+.navbar-custom img.logo{
+	width: 84px;
+	margin-top: 19px;
+}

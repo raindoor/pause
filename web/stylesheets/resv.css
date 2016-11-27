@@ -1,0 +1,135 @@
+body{
+  overflow-y: hidden;
+}
+#Resv{
+	margin: 220px 0 150px 0;
+	padding: 150px 0 0 0;
+	font-family: Noto Sans CJK KR;
+	color: white;
+	padding-bottom: 0;
+}
+
+#Resv .mainTitle p{
+	font-family: Core Gothic D ;
+	font-size: 70.2px;
+	font-weight: 100;
+	line-height: 1.4;
+  letter-spacing: 1px;
+}
+
+#Resv .subTitle{
+	margin-top: 30px;
+}
+#Resv .subTitle p{
+	opacity: 0.85;
+	font-family: Noto Sans CJK KR;
+	font-size: 27px;
+	line-height: 1.7;
+	text-align: center;
+	color: #ffffff;
+}
+.resvNav{
+  margin: 136px 0 35px 0;
+}
+.resvNav div{
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border-radius: 10px;
+  border: 2px solid #ff0;
+  margin: 0 10px;
+}
+.resvNav div.active{
+  background-color: #ff0;
+}
+.select{
+
+}
+.select p{
+	font-family: Core Gothic D;
+	font-size: 40px;
+	letter-spacing: 3px;
+	color: #c1a283;
+}
+.select .selectDate{
+  margin: 60px auto 0 auto;
+}
+.select .selectDate div{
+  width: 180px;
+  height: 60px;
+  margin: 0 20px;
+  border: solid 1px #c1a283;
+  border-radius: 60px;
+  display: inline-block;
+	font-family: Core Gothic D;
+	font-size: 28px;
+  line-height: 60px;
+	letter-spacing: 2.3px;
+}
+.select .selectTime{
+  margin: 46px auto 0 auto;
+  width: 390px;
+}
+.select .selectTime > div{
+  display: inline-block;
+  margin: 10px 20px;
+  float: left;
+}
+.select .selectTime .timeDiv{
+  width: 200px;
+  height: 50px;
+  border-bottom: 2px solid #c1a283;
+}
+.select .selectTime .timeDiv span{
+	font-size: 32px;
+	letter-spacing: 2.4px;
+	color: #c1a283;
+  display: inline-block;
+  float: right;
+  margin-right: 20px;
+}
+.select .selectTime .timeDiv .dayNight{
+  width: 40px;
+  height: 40px;
+  display: inline-block;
+  float: left;
+  margin-left: 15px;
+  background-repeat: no-repeat;
+  background-size: 40px 40px;
+}
+.select .selectTime .timeDiv .dayNight.day{
+  background-image: url("../images/dayTime.png");
+}
+.select .selectTime .timeDiv .dayNight.night{
+  background-image: url("../images/nightTime.png");
+}
+.select .selectTime .goNext{
+  width: 110px;
+  height: 50px;
+	background-color: #c1a283;
+  border-radius: 25px;
+	font-family: Lato;
+	font-size: 35px;
+	font-weight: 600;
+	font-style: italic;
+	letter-spacing: 0.9px;
+	text-align: center;
+}
+
+
+.bodyBackWrapper{
+  z-index: -1;
+  width: 100%;
+  height: 1180px;
+  background-image: url('../images/resvBg.png');
+  background-size: 100%;
+  background-repeat: no-repeat;
+  position: fixed;
+  top: 0;
+  opacity: 0.2;
+}
+.bodyBackWrapper.gradation{
+  background-image: url('../images/gradation.png');
+  background-position: 0 416px;
+  opacity: 1;
+}

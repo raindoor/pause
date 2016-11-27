@@ -25,8 +25,14 @@ var checkScrollSpeed = (function(settings){
 
 // listen to "scroll" event
 var prevSpeed = 0;
+var maxVal = 100;
 window.onscroll = function(){
-  var curSpeed = (checkScrollSpeed() + prevSpeed) / 2;
+  var curSpeed = (checkScrollSpeed()*0.1 + prevSpeed*0.9);
+  // var curSpeed = (checkScrollSpeed() + prevSpeed) / 2;
   prevSpeed = curSpeed;
-  $('section').css('-webkit-transform','skewY('+(curSpeed/30)+'deg)');
+  if(curSpeed > maxVal) curSpeed = maxVal;
+  else if(curSpeed < -1*maxVal) curSpeed = -1*maxVal;
+  $('.cine').css('-webkit-transform','skewY('+(curSpeed/5)+'deg)');
+  $('.cine pre').css('-webkit-transform','skewY('+(-1*curSpeed/5)+'deg)');
+  $('.cine span').css('-webkit-transform','skewY('+(-1*curSpeed/5)+'deg)');
 };

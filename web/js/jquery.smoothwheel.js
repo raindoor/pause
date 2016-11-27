@@ -9,7 +9,7 @@
 (function ($) {
 
     var self = this, container, running=false, currentY = 0, targetY = 0, oldY = 0, maxScrollTop= 0, minScrollTop, direction, onRenderCallback=null,
-            fricton = 0.85, // higher value for slower deceleration
+            fricton = 0.90, // higher value for slower deceleration
             vy = 0,
             stepAmt = 1,
             minMovement= 0.1,
@@ -123,7 +123,6 @@
         return this.each(function (index, elm) {
 
             if(!('ontouchstart' in window)){
-                console.log("!");
                 container = $(this);
                 container.bind("mousewheel", onWheel);
                 container.bind("DOMMouseScroll", onWheel);
@@ -132,7 +131,7 @@
                 targetY = oldY = container.get(0).scrollTop;
                 currentY = -targetY;
 
-                minScrollTop = container.get(0).clientHeight - container.get(0).scrollHeight;
+                minScrollTop = -1*container.get(0).scrollHeight;
                 if(options.onRender){
                     onRenderCallback = options.onRender;
                 }
