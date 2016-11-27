@@ -4,7 +4,7 @@ $(document).ready(function(){
     //  $(this).css("-webkit-transform", "translateZ(" + e[i]*1 + "px)")
             // .css("z-index", e[i])
     $(this).addClass('idx'+i)
-    e = [310,345,0,-205,300,170,-140,385,-105,-150]
+    e = [310,345,-80,-205,300,170,-140,385,-105,-150]
     $(this).css("-webkit-transform", "translateZ(" + e[i] + "px)")
            .css("-moz-transform", "translateZ(" + e[i] + "px)")
            .css("transform", "translateZ(" + e[i] + "px)")

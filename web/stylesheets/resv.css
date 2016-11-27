@@ -204,14 +204,13 @@ body{
   width: 100%;
 }
 
-
-.idx1{ top: 211px; left: 660px;  width: 298px;}
-.idx2{ top: 299px; left: 396px;  width: 223px;}
-.idx3{ top: 493px; left: 408px;  width: 172px;}
-.idx4{ top: 531px; left: 248px;  width: 294px;}
-.idx5{ top: 666px; left: 468px;  width: 220px;}
-.idx6{ top: 242px; left: 1103px; width: 176px;}
-.idx7{ top: 365px; left: 1330px; width: 355px;}
-.idx8{ top: 491px; left: 1436px; width: 291px;}
-.idx9{ top: 672px; left: 1356px; width: 191px;}
-.idx0{ top: 689px; left: 1112px; width: 292px;}
+.idx1{ top: 211px; left: 32.8vw; width: 298px;}
+.idx2{ top: 299px; left: 19.7vw; width: 223px;}
+.idx3{ top: 493px; left: 20.3vw; width: 172px;}
+.idx4{ top: 531px; left: 12.3vw; width: 294px;}
+.idx5{ top: 666px; left: 23.3vw; width: 220px;}
+.idx6{ top: 242px; left: 54.9vw; width: 176px;}
+.idx7{ top: 365px; left: 66.2vw; width: 355px;}
+.idx8{ top: 491px; left: 71.5vw; width: 291px;}
+.idx9{ top: 672px; left: 67.5vw; width: 191px;}
+.idx0{ top: 689px; left: 55.3vw; width: 292px;}
