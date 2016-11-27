@@ -131,7 +131,7 @@
                 targetY = oldY = container.get(0).scrollTop;
                 currentY = -targetY;
 
-                minScrollTop = -1*container.get(0).scrollHeight;
+                minScrollTop = -1*container.get(0).scrollHeight - 1000;
                 if(options.onRender){
                     onRenderCallback = options.onRender;
                 }

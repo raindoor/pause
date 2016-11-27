@@ -153,3 +153,74 @@
 	font-size: 32px;
 	color: #ffffff;
 }
+#Events .poster{
+	margin: 120px 0px;
+	padding: 0 40px;
+}
+#Events .poster.posterLeft img{
+	float: left;
+}
+#Events .poster.posterRight img{
+	float: right;
+}
+#Events .poster .img{
+	display: block;
+	height: 900px;
+}
+#Events .doReserv{
+	margin: 0 auto;
+	width: 210px;
+	height: 70px;
+	border-radius: 35px;
+	line-height: 70px;
+	color: black;
+	text-align: center;
+	font-family: Core Gothic D;
+	font-size: 26px;
+	font-weight: 500;
+	background-color: #ffe825;
+	border: solid 1px #979797;
+}
+#Events .app{
+	margin: 120px 0px;
+	padding: 0 40px;
+}
+#Events .app.appLeft img{
+	float: left;
+}
+#Events .app.appRight img{
+	float: right;
+}
+#Events .app .img{
+	display: block;
+	height: 470px;
+}
+
+footer{
+	padding-right: 70px;
+}
+
+footer span{
+	display: inline-block;
+	float: left;
+	margin: 180px 40px 50px 0;
+	font-family: Lato;
+	font-size: 30px;
+	line-height: 1.8;
+	text-align: center;
+	color: #ffffff;
+}
+
+footer span.copyright{
+	line-height: 1.4;
+	font-size: 45px;
+	margin-right: 15px;
+	margin-left: 70px;
+}
+
+footer img{
+	display: inline-block;
+	float: right;
+	margin: 180px 20px 50px 0;
+	height: 50px;
+}
