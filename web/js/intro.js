@@ -8,7 +8,7 @@ var changeTimer;
 function changeIntroWord(){
   if(cnt == 5){
     clearInterval(changeTimer);
-    location.href = 'home.html';
+    location.href = 'main.html';
     return;
   }
   console.log(cnt);
