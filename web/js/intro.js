@@ -1,25 +1,18 @@
-// Agency Theme JavaScript
-var cnt = 1;
-var redirectCnt = 0;
+var cnt = 2;
 var changeTimer;
 (function($) {
-  changeTimer = setInterval(changeIntroWord , 1000);
+  changeTimer = setInterval(changeIntroWord , 400);
 
-})(jQuery); // End of use strict
+})(jQuery);
 
 function changeIntroWord(){
-  if(redirectCnt == 5){
+  if(cnt == 5){
     clearInterval(changeTimer);
-    showIntro2();
+    location.href = 'home.html';
     return;
   }
+  console.log(cnt);
   $('.wordContainer h1').hide();
-  $('.wordContainer .word'+(cnt+1)).show();
-  cnt = (cnt+1)%3;
-  redirectCnt++;
-}
-
-function showIntro2(){
-  $('.introContainer').hide();
-  $('.intro2Container').show();
+  $('.wordContainer .word'+cnt).show();
+  cnt++;
 }
