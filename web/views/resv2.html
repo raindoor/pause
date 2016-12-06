@@ -76,33 +76,23 @@
       <div></div>
     </div>
     <div class="select">
-      <p class="intro">
-        세단계만 거치고 나면 당신만의 퍼즈로 안내합니다
-      </p>
-      <p class="step">
+      <p>
         먼저, 원하는 날과 시간을 선택하세요.
       </p>
       <div class="selectDate">
-        <div data-value=0>오늘</div>
-        <div data-value=1>내일</div>
-        <div data-value=2>모레</div>
-
+        <div>오늘</div>
+        <div>내일</div>
+        <div>모레</div>
         <div>다른 날</div>
       </div>
       <div class="selectTime">
         <div class="timeDiv">
           <div class="dayNight day"></div>
-          <div class="timeList">
-            <select></select>
-          </div>
+          <span>시</span>
         </div>
-        <form id="resvForm" action="./resv2.html">
-          <input type="hidden" name="date" />
-          <input type="hidden" name="time" />
-          <button type="submit" class="goNext">
-            Go!
-          </button>
-        </form>
+        <div class="goNext">
+          Go!
+        </div>
       </div>
     </div>
   </section>

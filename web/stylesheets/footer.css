@@ -1,0 +1,33 @@
+footer{
+	padding-right: 70px;
+	display: inline-block;
+	width: 100%;
+	background-color: #1b1b1b;
+}
+
+footer span{
+	background-color: #1b1b1b;
+	display: inline-block;
+	float: left;
+	margin: 30px 40px 50px 0;
+	font-family: Lato;
+	font-size: 30px;
+	line-height: 1.8;
+	text-align: center;
+	color: #ffffff;
+}
+
+footer span.copyright{
+	background-color: #1b1b1b;
+	line-height: 1.4;
+	font-size: 45px;
+	margin-right: 15px;
+	margin-left: 70px;
+}
+
+footer img{
+	display: inline-block;
+	float: right;
+	margin: 30px 20px 50px 0;
+	height: 50px;
+}

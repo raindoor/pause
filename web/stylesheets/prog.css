@@ -1,0 +1,85 @@
+#ProgTitle{
+	padding: 270px 0;
+}
+#ProgTitle .mainTitle{
+	font-family: Core Gothic D;
+	font-size: 60px;
+	line-height: 1.3;
+	letter-spacing: 5.2px;
+	font-weight: 200;
+	text-align: center;
+	color: #ffffff;
+}
+#ProgTitle .subTitle{
+	font-family: Noto Sans CJK KR thin;
+	font-size: 30px;
+	font-weight: 100;
+	line-height: 1.5;
+	letter-spacing: 2.6px;
+	text-align: center;
+	color: #dddddd;
+}
+
+#ProgContent{
+
+}
+#ProgContent .title{
+	display: block;
+	border-color: #000;
+	border-style: solid;
+	height: 0px;
+	margin: 50px 0;
+}
+#ProgContent .title.titleLeft{
+	border-bottom-color: #ac916b;
+  border-bottom-width: 120px;
+  border-right-width: 60px;
+  float: left;
+  width: 45%;
+	margin-right: 55%;
+}
+#ProgContent .title.titleRight{
+	border-top-color: #ac916b;
+  border-top-width: 120px;
+  border-left-width: 60px;
+  float: right;
+  width: 45%;
+	margin-left: 55%;
+}
+#ProgContent .title span{
+	line-height: 120px;
+	display: block;
+	font-family: Lato;
+	font-size: 60px;
+	font-style: italic;
+	letter-spacing: 4.5px;
+	text-align: center;
+	color: #ffffff;
+}
+
+#ProgContent .title.titleRight span{
+	margin-top: -60px;
+	line-height: 0px;
+}
+/*
+{
+  border-bottom-width: 60px;
+  border-right-width: 30px;
+  float: left;
+  width: 55%;
+  margin-left: 0%;
+}
+{
+  border-top-width: 60px;
+  border-left-width: 30px;
+  float: right;
+  width: 70%;
+  margin-right: 0%;
+}
+{
+  border-bottom-width: 60px;
+  border-right-width: 30px;
+  float: left;
+  width: 80%;
+  margin-left: 0%;
+}*/

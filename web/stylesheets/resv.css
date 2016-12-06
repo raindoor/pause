@@ -2,7 +2,7 @@ body{
   overflow-y: hidden;
 }
 #Resv{
-	margin: 220px 0 150px 0;
+	margin: 160px 0 150px 0;
 	padding: 150px 0 0 0;
 	font-family: Noto Sans CJK KR;
 	color: white;
@@ -11,7 +11,7 @@ body{
 
 #Resv .mainTitle p{
 	font-family: Core Gothic D ;
-	font-size: 70.2px;
+	font-size: 65.2px;
 	font-weight: 100;
 	line-height: 1.4;
   letter-spacing: 1px;
@@ -29,25 +29,32 @@ body{
 	color: #ffffff;
 }
 .resvNav{
-  margin: 136px 0 35px 0;
+  margin: 106px 0 35px 0;
 }
 .resvNav div{
   display: inline-block;
   width: 20px;
   height: 20px;
   border-radius: 10px;
-  border: 2px solid #ff0;
+  border: 2px solid #fff;
   margin: 0 10px;
 }
 .resvNav div.active{
-  background-color: #ff0;
+  background-color: #fff;
 }
 .select{
 
 }
-.select p{
+.select .intro{
 	font-family: Core Gothic D;
 	font-size: 40px;
+	letter-spacing: 3.8px;
+	text-align: center;
+	color: #ffffff;
+}
+.select .step{
+	font-family: Core Gothic D;
+	font-size: 30px;
 	letter-spacing: 3px;
 	color: #c1a283;
 }
@@ -67,6 +74,9 @@ body{
 	letter-spacing: 2.3px;
   cursor: pointer;
   -webkit-transition: .2s;
+}
+.select .selectDate div:last-child{
+  border-width: 2px;
 }
 .select .selectDate div.selected,
 .select .selectDate div:hover{
@@ -102,6 +112,7 @@ body{
   margin-left: 15px;
   background-repeat: no-repeat;
   background-size: 40px 40px;
+  cursor: pointer;
 }
 .select .selectTime .timeDiv .dayNight.day{
   background-image: url("../images/dayTime.png");
@@ -109,10 +120,49 @@ body{
 .select .selectTime .timeDiv .dayNight.night{
   background-image: url("../images/nightTime.png");
 }
+
+.selectTime .timeList {
+    padding: 0;
+    margin: -5px 0 0 32px;
+    width: 70px;
+    display: inline-block;
+    float: left;
+    border-radius: 3px;
+    overflow: hidden;
+    background-color: transparent;
+    color: #c1a283;
+    font-size: 29px;
+    cursor: pointer;
+    /*background: #fff url("http://www.scottgood.com/jsg/blog.nsf/images/arrowdown.gif") no-repeat 90% 50%;*/
+}
+
+.selectTime .timeList select {
+    letter-spacing: 2px;
+    cursor: pointer;
+    text-align: right;
+    padding: 5px 8px;
+    width: 130%;
+    border: none;
+    box-shadow: none;
+    background-color: transparent;
+    background-image: none;
+    -webkit-appearance: none;
+       -moz-appearance: none;
+            appearance: none;
+}
+
+.selectTime .timeList select:focus {
+    outline: none;
+}
+
 .select .selectTime .goNext{
   width: 110px;
   height: 50px;
-	background-color: #c1a283;
+  border: 1px solid #c1a283;
+  line-height: 14px;
+  margin-top: 9px;
+  background-color: #c1a283;
+  cursor: pointer;
   border-radius: 25px;
 	font-family: Lato;
 	font-size: 35px;
@@ -204,13 +254,13 @@ body{
   width: 100%;
 }
 
-.idx1{ top: 211px; left: 32.8vw; width: 298px;}
-.idx2{ top: 299px; left: 19.7vw; width: 223px;}
-.idx3{ top: 493px; left: 20.3vw; width: 172px;}
-.idx4{ top: 531px; left: 12.3vw; width: 294px;}
-.idx5{ top: 666px; left: 23.3vw; width: 220px;}
-.idx6{ top: 242px; left: 54.9vw; width: 176px;}
-.idx7{ top: 365px; left: 66.2vw; width: 355px;}
-.idx8{ top: 491px; left: 71.5vw; width: 291px;}
-.idx9{ top: 672px; left: 67.5vw; width: 191px;}
-.idx0{ top: 689px; left: 55.3vw; width: 292px;}
+.idx1{ top: 161px; left: 32.8vw; width: 298px;}
+.idx2{ top: 249px; left: 19.7vw; width: 223px;}
+.idx3{ top: 443px; left: 20.3vw; width: 172px;}
+.idx4{ top: 481px; left: 12.3vw; width: 294px;}
+.idx5{ top: 616px; left: 23.3vw; width: 220px;}
+.idx6{ top: 192px; left: 54.9vw; width: 176px;}
+.idx7{ top: 315px; left: 66.2vw; width: 355px;}
+.idx8{ top: 441px; left: 71.5vw; width: 291px;}
+.idx9{ top: 622px; left: 67.5vw; width: 191px;}
+.idx0{ top: 639px; left: 55.3vw; width: 292px;}

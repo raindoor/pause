@@ -1,9 +1,24 @@
 #About{
-	margin: 250px 0 150px 0;
-	padding: 150px 0 0 0;
+	margin: 0px 0 150px 0;
+	padding: 400px 0 0 0;
 	font-family: Noto Sans CJK KR;
 	color: white;
 	padding-bottom: 0;
+
+}
+#About::after{
+  content : "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity : 0.15;
+  z-index: -1;
+	background-image: url("../images/aboutBg.png");
+	background-repeat: no-repeat;
+	background-size: 100%;
 }
 
 #About .mainAbout p{
@@ -12,23 +27,9 @@
 	font-weight: 100;
 	line-height: 1.4;
 }
-#About .mainAbout p .pauseEng{
-	font-size: 97.2px;
-	font-weight: 500;
-	font-family: Lato;
-	font-style: italic;
-	line-height: 1;
-	color: #ffe825;
-}
-#About .mainAbout p .pauseKr{
-	font-family: Core Gothic D;
-	font-size: 48px;
-	line-height: 2.1;
-	color: #ffe825;
-}
 
 #About .subAbout{
-	margin-top: 30px;
+	margin: 30px 0 270px 0;
 }
 #About .subAbout p{
 	opacity: 0.85;
@@ -51,31 +52,41 @@
 }
 
 #About .cine{
-	width: 1630px;
+	width: 1680px;
 	display: inline-block;
-	padding: 330px 37px 0 71.5px;
 	text-align: left;
+	margin: 30px auto;
+	height: 880px;
+	background-repeat: no-repeat;
+}
+#About .cine.about0{
+	background-size: cover;
+	height: 360px;
+	background-image: url("../images/mov/about0.png");
+	/*height: 480px;*/
 }
 #About .cine.about1{
 	background-size: cover;
-	height: 708px;
 	background-image: url("../images/mov/about1.png");
 }
 #About .cine.about2{
 	background-size: cover;
-	height: 749px;
 	background-image: url("../images/mov/about2.png");
 	padding-top: 310px;
 }
 #About .cine.about3{
 	background-size: cover;
-	height: 901px;
 	background-image: url("../images/mov/about3.png");
+	padding-top: 560px;
+}
+#About .cine.about4{
+	background-size: cover;
+	background-image: url("../images/mov/about4.png");
 	padding-top: 560px;
 }
 #About .cine .cineTitle{
 	display: block;
-	top: 290px;
+	top: 200px;
 	font-size: 60px;
 	font-family: Lato;
 	font-weight: 600;
@@ -106,13 +117,15 @@
 }
 
 #Tip{
-	padding: 71px 0 157px 0;
+	padding-top: 71px;
 }
 #Tip .title{
 	font-family: Core Gothic D;
 	font-size: 58.5px;
 	font-weight: 200;
 	line-height: 1.4;
+	background-color: transparent;
+	border: none;
 	color: #cbb6a0;
 }
 #Tip .subTitle{
@@ -124,33 +137,50 @@
 #Tip .row{
 	margin: 90px 150px;
 }
+#Tip .membership{
+	background-color: #000;
+}
+#Tip .membership .title{
+	padding-top: 120px;
+	height: 270px;
+}
 #Tip .row > div{
 	padding: 0 37px;
 }
 #Tip .row > div > .imgWrapper{
 	height: 311px;
-	background-color: #d8d8d8;
-	margin-bottom : 90px;
+}
+#Tip .row > div > .imgWrapper img{
+	width: 100%;
 }
 #Tip .row > div > .description{
-	font-family: Noto Sans CJK kr;
-	font-size: 32px;
-	line-height: 1.7;
+	font-family: TSTMovRO Book;
+	font-size: 31px;
+	line-height: 1.5;
+	letter-spacing: 1.6px;
 	text-align: center;
 	color: #ffffff;
+
+
 }
 #Events {
+	background-color: #1b1b1b;
 	padding-top: 154px;
 }
-#Events .mainTitle p{
+#Events .mainTitle pre{
+	border: none;
+	background-color: transparent;
 	font-family: Core Gothic D;
 	font-size: 58.5px;
 	font-weight: 200;
 	color: #ffe825;
 }
 #Events .subTitle p{
-	font-family: Noto Sans CJK kr;
-	font-size: 32px;
+	font-family: TSTMovRO Book;
+	font-size: 31px;
+	line-height: 1.5;
+	letter-spacing: 1.6px;
+	text-align: center;
 	color: #ffffff;
 }
 #Events .poster{
@@ -198,33 +228,4 @@
 #Events .app img{
 	display: block;
 	height: 470px;
-}
-
-footer{
-	padding-right: 70px;
-}
-
-footer span{
-	display: inline-block;
-	float: left;
-	margin: 180px 40px 50px 0;
-	font-family: Lato;
-	font-size: 30px;
-	line-height: 1.8;
-	text-align: center;
-	color: #ffffff;
-}
-
-footer span.copyright{
-	line-height: 1.4;
-	font-size: 45px;
-	margin-right: 15px;
-	margin-left: 70px;
-}
-
-footer img{
-	display: inline-block;
-	float: right;
-	margin: 180px 20px 50px 0;
-	height: 50px;
 }
