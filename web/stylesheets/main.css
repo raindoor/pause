@@ -1,22 +1,21 @@
 body{
 	background-color: #000;
-	font-family: Lato;
+	font-family: Lobster Two;
   padding: 0;
 }
 .mainContainer{
-  margin-top: 300px;
   padding: 0;
 }
 .mainLogo{
-  width: 140px;
+	margin: 39px 1728px 300px 0;
+  width: 75px;
 }
 .menuContainer .mainMenu{
-  margin: 80px 0 70px 0;
+  margin: 53px 0 54px 0;
 }
 .menuContainer a{
   display: block;
-	font-family: Lato;
-	font-size: 60px;
+	font-size: 49px;
 	font-style: italic;
 	letter-spacing: 1.5px;
 	color: white;
@@ -29,41 +28,64 @@ body{
 .menuContainer .lineDiv{
   border-width: 0px;
   border-style: solid;
-  border-color: #000000;
+  border-color: transparent;
   width: 55%;
-  margin-top: -30px;
+  margin-top: -69px;
   -webkit-transition: .5s;
 }
 .menuContainer .mainMenu:hover .lineDiv.idx1{
-  border-bottom-color: #cbb6a0;
+  border-bottom-color: #ac916b;
   margin-left: 0%;
 }
 .menuContainer .mainMenu:hover .lineDiv.idx2{
-  border-top-color: #cbb6a0;
+  border-top-color: #ac916b;
   margin-right: 0%;
 }
 .menuContainer .mainMenu:hover .lineDiv.idx3{
-  border-bottom-color: #cbb6a0;
+  border-bottom-color: #ac916b;
   margin-left: 0%;
 }
 .menuContainer .lineDiv.idx1{
-  border-bottom-width: 60px;
-  border-right-width: 30px;
+  border-bottom-width: 70px;
+  border-right-width: 35px;
   float: left;
-  width: 55%;
+  width: 57%;
   margin-left: -60%;
 }
 .menuContainer .lineDiv.idx2{
-  border-top-width: 60px;
-  border-left-width: 30px;
+  border-top-width: 70px;
+  border-left-width: 35px;
   float: right;
-  width: 70%;
+  width: 61%;
   margin-right: -70%;
 }
 .menuContainer .lineDiv.idx3{
-  border-bottom-width: 60px;
-  border-right-width: 30px;
+	margin-top: -64px;
+  border-bottom-width: 70px;
+  border-right-width: 35px;
   float: left;
-  width: 80%;
+  width: 60%;
   margin-left: -80%;
 }
+
+.bodyBackWrapper{
+  z-index: -1;
+	width: 190px;
+  height: 1180px;
+  position: fixed;
+  top: 0;
+  opacity: 0.8;
+}
+.backImagesDiv{
+	display: none;
+}
+.backImagesDiv img{
+	position: absolute;
+}
+
+.backImagesDiv.idx0 img.idx0{ left : 78px; 	 top: 906px; width: 500px;}
+.backImagesDiv.idx0 img.idx1{ left : 837px;  top: 53px;	 width: 500px;}
+.backImagesDiv.idx1 img.idx0{ left : 83px;   top: 928px; width: 500px;}
+.backImagesDiv.idx1 img.idx1{ left: 1191px;  top:  69px; width: 657px;}
+.backImagesDiv.idx2 img.idx0{ left : 70px; 	 top: 788px; width: 500px;}
+.backImagesDiv.idx2 img.idx1{ left: 1328px;  top: 320px; width: 500px;}

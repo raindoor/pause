@@ -13,6 +13,11 @@ section.gray{
 	background-color: #1b1b1b;
 }
 
+pre{
+	background-color: transparent;
+	border: 0;
+}
+
 .italic{
 	font-style: italic;
 }

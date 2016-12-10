@@ -1,6 +1,6 @@
 .navbar-custom {
 	padding: 0;
-	margin: 25px 0 270px 0;
+	margin: 39px 0 270px 0;
 	position: absolute;
 	background-color: transparent;
 }
@@ -41,5 +41,6 @@
 	color: rgb(222, 187, 146);
 }
 .navbar-custom img.logo{
-	width: 84px;
+	width: 62px;
+	margin-left: 17px;
 }

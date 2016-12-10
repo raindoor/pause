@@ -2,7 +2,7 @@ body{
   overflow-y: hidden;
 }
 #Resv{
-	margin: 160px 0 150px 0;
+	margin: 120px 0 80px 0;
 	padding: 150px 0 0 0;
 	font-family: Noto Sans CJK KR;
 	color: white;
@@ -10,8 +10,8 @@ body{
 }
 
 #Resv .mainTitle p{
-	font-family: Core Gothic D ;
-	font-size: 65.2px;
+	font-family: 태-영화체 ;
+	font-size: 53px;
 	font-weight: 100;
 	line-height: 1.4;
   letter-spacing: 1px;
@@ -21,15 +21,14 @@ body{
 	margin-top: 30px;
 }
 #Resv .subTitle p{
-	opacity: 0.85;
 	font-family: Noto Sans CJK KR;
-	font-size: 27px;
+	font-size: 23px;
 	line-height: 1.7;
 	text-align: center;
 	color: #ffffff;
 }
 .resvNav{
-  margin: 106px 0 35px 0;
+  margin: 80px 0 35px 0;
 }
 .resvNav div{
   display: inline-block;
@@ -46,14 +45,14 @@ body{
 
 }
 .select .intro{
-	font-family: Core Gothic D;
+	font-family: 태-영화체;
 	font-size: 40px;
 	letter-spacing: 3.8px;
 	text-align: center;
 	color: #ffffff;
 }
 .select .step{
-	font-family: Core Gothic D;
+	font-family: 태-영화체;
 	font-size: 30px;
 	letter-spacing: 3px;
 	color: #c1a283;
@@ -68,7 +67,7 @@ body{
   border: solid 1px #c1a283;
   border-radius: 60px;
   display: inline-block;
-	font-family: Core Gothic D;
+	font-family: 태-영화체;
 	font-size: 28px;
   line-height: 60px;
 	letter-spacing: 2.3px;
@@ -222,14 +221,12 @@ body{
 .backgroundGif img.idx0{ top: 689px; left: 1112px; width: 292px;}*/
 #planeOverflow {
     width: 100vw;
-    height: 100vh;
     position: fixed;
     top: 0px;
 }
 
 #planeRotate {
     width: 80vw;
-    height: 70vh;
     -webkit-transform-style: preserve-3d;
     -moz-transform-style: preserve-3d;
     transform-style: preserve-3d;
@@ -254,13 +251,13 @@ body{
   width: 100%;
 }
 
-.idx1{ top: 161px; left: 32.8vw; width: 298px;}
-.idx2{ top: 249px; left: 19.7vw; width: 223px;}
-.idx3{ top: 443px; left: 20.3vw; width: 172px;}
-.idx4{ top: 481px; left: 12.3vw; width: 294px;}
-.idx5{ top: 616px; left: 23.3vw; width: 220px;}
-.idx6{ top: 192px; left: 54.9vw; width: 176px;}
-.idx7{ top: 315px; left: 66.2vw; width: 355px;}
-.idx8{ top: 441px; left: 71.5vw; width: 291px;}
-.idx9{ top: 622px; left: 67.5vw; width: 191px;}
-.idx0{ top: 639px; left: 55.3vw; width: 292px;}
+.idx1{ top: 111px; left: 32.8vw; width: 298px;}
+.idx2{ top: 199px; left: 19.7vw; width: 223px;}
+.idx3{ top: 393px; left: 20.3vw; width: 172px;}
+.idx4{ top: 431px; left: 12.3vw; width: 294px;}
+.idx5{ top: 566px; left: 23.3vw; width: 220px;}
+.idx6{ top: 142px; left: 54.9vw; width: 176px;}
+.idx7{ top: 265px; left: 66.2vw; width: 355px;}
+.idx8{ top: 391px; left: 71.5vw; width: 291px;}
+.idx9{ top: 572px; left: 67.5vw; width: 191px;}
+.idx0{ top: 589px; left: 55.3vw; width: 292px;}

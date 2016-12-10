@@ -47,6 +47,4 @@ window.onscroll = function(){
 
 function makeSkew(curSpeed){
   $('.cine').css('-webkit-transform','skewY('+(curSpeed/5)+'deg)');
-  $('.cine pre').css('-webkit-transform','skewY('+(-1*curSpeed/5)+'deg)');
-  $('.cine span').css('-webkit-transform','skewY('+(-1*curSpeed/5)+'deg)');
 }

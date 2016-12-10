@@ -31,14 +31,11 @@ $(document).ready(function(){
     var add = parseInt($(this).attr('data-value'));
     var curDate = new Date();
     curDate.setDate(curDate.getDate() + add);
-    var dd = curDate.getDate();
-    var mm = curDate.getMonth()+1;
-    var yyyy = curDate.getFullYear();
-    dd= dd<10 ? '0'+dd : dd;
-    mm= mm<10 ? '0'+mm : mm;
-    curDate = yyyy+'/'+mm+'/'+dd;
     console.log(curDate);
-    $('#resvForm input[name=date]').val(curDate);
+    $('#resvForm input[name=yyyy]').val(curDate.getFullYear());
+    $('#resvForm input[name=mm]').val(curDate.getMonth()+1);
+    $('#resvForm input[name=dd]').val(curDate.getDate());
+    $('#resvForm input[name=word]').val($(this).text());
   })
   for(var i=1; i<13; i++){
     var option = $('<option value='+i+'>'+i+'시</option>');
@@ -52,10 +49,12 @@ $(document).ready(function(){
     if($(this).hasClass('day')){
       $(this).removeClass('day');
       $(this).addClass('night');
+      $('#resvForm input[name=dayNight]').val('night');
     }
     else{
       $(this).removeClass('night');
       $(this).addClass('day');
+      $('#resvForm input[name=dayNight]').val('day');
     }
   })
 });
