@@ -4,6 +4,9 @@
 
 #ProgTitle{
 	padding: 270px 0;
+	background-image: url("../images/programs/programs-bg-header.png");
+	background-size: 60%;
+	background-repeat: no-repeat;
 }
 
 .mainTitle{
