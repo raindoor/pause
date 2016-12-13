@@ -11,8 +11,10 @@
   <link href="../stylesheets/agency.css" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="../stylesheets/nav.css" />
   <link rel="stylesheet" type="text/css" href="../stylesheets/common.css" />
-  <link rel="stylesheet" type="text/css" href="../stylesheets/resv.css" />
+  <link rel="stylesheet" type="text/css" href="../stylesheets/footer.css" />
+  <link rel="stylesheet" type="text/css" href="../stylesheets/resv2.css" />
   <script src="../js/jquery.min.js"></script>
+  <script src="../js/jquery.smoothWheel.js"></script>
   <script src="../js/bootstrap.min.js"></script>
   <script src="../js/resv2.js"></script>
 </head>
@@ -47,39 +49,150 @@
   </nav>
 
   <section id="Resv2" class="text-center">
-    <div class="mainTitle">
-      <p>퍼즈와 함께 오늘 저녁</p>
-      <p>영화 한편 어떠세요?</p>
-    </div>
-    <div class="subTitle">
-      <p>예약이 이렇게 간단한걸요!</p>
-    </div>
     <div class="resvNav text-center">
+      <div></div>
       <div class="active"></div>
       <div></div>
-      <div></div>
     </div>
-    <div class="select">
-      <p>
-        먼저, 원하는 날과 시간을 선택하세요.
-      </p>
-      <div class="selectDate">
-        <div>오늘</div>
-        <div>내일</div>
-        <div>모레</div>
-        <div>다른 날</div>
+    <div class="movieInfoDiv">
+      <span class="movieInfo">12월 14일 오늘, 저녁 7시</span>
+      <span class="afterMovieInfo">의 영화입니다.</span>
+    </div>
+    <p class="subTitle">벌써 크리스마스가 다음주로 훌쩍 다가왔네요!</p>
+    <p class="subTitle">오늘은 연말 분위기 물씬 나는 영화들로 꾸려봤습니다.</p>
+  </section>
+  <section id="Select" class="text-center">
+    <div class="container selectMovieWrapper">
+      <div class="row text-left">
+        <span class="guide">보고 싶은 영화를 선택하세요</span>
       </div>
-      <div class="selectTime">
-        <div class="timeDiv">
-          <div class="dayNight day"></div>
-          <span>시</span>
+      <div class="row selectMovie">
+        <div class="col-xs-6">
+          <div class="movieUnit big idx1"
+          movieUrl="https://www.youtube.com/embed/kZfiXzeUUXE">
+            <span class="pausePick">Pause's Pick</span>
+            <img class="heart" />
+          </div>
         </div>
-        <div class="goNext">
-          Go!
+        <div class="col-xs-3">
+          <div class="movieUnit idx2"
+          movieUrl="https://www.youtube.com/embed/yWhAW9QTYKQ">
+
+          </div>
+          <div class="movieUnit idx3">
+
+          </div>
+        </div>
+        <div class="col-xs-3">
+          <div class="movieUnit idx4">
+
+          </div>
+          <div class="movieUnit idx5">
+
+          </div>
         </div>
       </div>
+      <div class="row selectMovie">
+        <div class="col-xs-3">
+          <div class="movieUnit idx6">
+
+          </div>
+          <div class="movieUnit idx7">
+
+          </div>
+        </div>
+        <div class="col-xs-6">
+          <div class="movieUnit big idx8">
+            <span class="pausePick">Pause's Pick</span>
+            <img class="heart" />
+          </div>
+        </div>
+        <div class="col-xs-3">
+          <div class="movieUnit idx9">
+
+          </div>
+          <div class="movieUnit idx10">
+
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container selectedMovieWrapper">
+      <div class="row text-left">
+        <span class="guide">선택한 영화와 관련된 비디오입니다.</span>
+      </div>
+      <div class="row">
+        <iframe width="1150" height="667" src="https://www.youtube.com/embed/yWhAW9QTYKQ" frameborder="0" allowfullscreen></iframe>
+      </div>
+    </div>
+    <div class="container selectGoodsAndSnacks">
+      <div class="row text-left">
+        <span class="guide">아늑한 관람을 도와줄 친구들을 선택하세요</span>
+      </div>
+      <div class="row goods text-left">
+        <span class="title">Goods</span>
+      </div>
+      <div class="row options">
+        <div class="col-xs-3">
+          <img src="../images/resvOption/opt1.png" />
+        </div>
+        <div class="col-xs-3">
+          <img src="../images/resvOption/opt2.png" />
+        </div>
+        <div class="col-xs-3">
+          <img src="../images/resvOption/opt3.png" />
+        </div>
+        <div class="col-xs-3">
+          <img src="../images/resvOption/opt4.png" />
+        </div>
+      </div>
+      <div class="row snacks text-left">
+        <span class="title">Snacks</span>
+      </div>
+      <div class="row options">
+        <div class="col-xs-3">
+          <img src="../images/resvOption/opt1.png" />
+        </div>
+        <div class="col-xs-3">
+          <img src="../images/resvOption/opt2.png" />
+        </div>
+        <div class="col-xs-3">
+          <img src="../images/resvOption/opt3.png" />
+        </div>
+        <div class="col-xs-3">
+          <img src="../images/resvOption/opt4.png" />
+        </div>
+      </div>
+      <div class="row options">
+        <div class="col-xs-3">
+          <img src="../images/resvOption/opt5.png" />
+        </div>
+        <div class="col-xs-3">
+          <img src="../images/resvOption/opt6.png" />
+        </div>
+        <div class="col-xs-3">
+          <img src="../images/resvOption/opt7.png" />
+        </div>
+        <div class="col-xs-3">
+          <img src="../images/resvOption/opt8.png" />
+        </div>
+      </div>
+    </div>
+    <div class="prevNext">
+      <a href="resv.html">
+        <div class="goPrev">
+          이전
+        </div>
+      </a>
+      <form action="resv3.html">
+        <input type="hidden" name="dateInfo" />
+        <button type="submit" class="goNext">
+          다음
+        </div>
+      </a>
     </div>
   </section>
+
   <div class="bodyBackWrapper">
   </div>
   <div class="bodyBackWrapper gradation">

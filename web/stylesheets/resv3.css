@@ -1,0 +1,164 @@
+
+#Resv3{
+	padding: 283px 0 0 0;
+	font-family: Noto Sans CJK KR;
+	color: white;
+	padding-bottom: 0;
+}
+#Resv3 .container,
+#ResvInfo .container{
+	width: 1300px !important;
+}
+.resvNav div{
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  border-radius: 7.5px;
+  border: 2px solid #fff;
+  margin: 0 10px;
+}
+.resvNav div.active{
+  background-color: #fff;
+}
+.movieInfoDiv p{
+  margin: 30px 0 20px 0;
+}
+.movieInfoDiv .movieInfo{
+	height: 49px;
+	font-family: Core Gothic D;
+	font-size: 50px;
+	font-weight: 300;
+	line-height: 1.3;
+	letter-spacing: 4px;
+	text-align: center;
+	color: #ffffff;
+}
+.movieInfoDiv .afterMovieInfo span{
+	display: inline-block;
+  font-family: Core Gothic D;
+  font-size: 38px;
+  font-weight: 300;
+  line-height: 2.1;
+	margin-left: 20px;
+  letter-spacing: 3.2px;
+}
+.movieInfoDiv .afterMovieInfo .name{
+	font-size: 65px;
+	font-weight: 300;
+	line-height: 1.3;
+	margin-left: 40px;
+	letter-spacing: 5.2px;
+}
+
+.ticketBorder{
+	height: 13px;
+	border: solid 2px #ac916b;
+	margin: 60px 0;
+}
+.movieImg{
+	padding: 0 20px;
+}
+.movieImg .movieCapture{
+	float: right;
+	width: 100%;
+}
+
+.movieInfo{
+	padding-left: 30px;
+}
+.movieInfo .movieTitleKr{
+	font-family: Noto Sans CJK KR thin;
+	font-size: 70px;
+	line-height: 1.3;
+	letter-spacing: 5.6px;
+}
+.movieInfo .movieTitleEn{
+	font-family: Lato;
+	font-size: 45px;
+	font-weight: 300;
+	font-style: italic;
+	line-height: 2;
+	letter-spacing: 3.8px;
+}
+.movieInfo .movieShortInfo{
+	margin: 40px 0 0 0;
+}
+.movieInfo .movieShortInfo span{
+	font-family: Lato;
+	font-size: 45px;
+	font-weight: 300;
+	font-style: italic;
+	letter-spacing: 0.5px;
+	color: #ac916b;
+}
+.movieInfo .movieShortInfo .year{
+	margin-right: 70px;
+}
+#ResvInfo{
+	padding: 80px 0;
+}
+.resvInfo .row > div{
+	padding-left: 0px;
+}
+.resvInfo .row > div.first{
+	padding-left: 130px;
+}
+.resvInfo .resvUnit{
+	font-family: Lucida Bright;
+	font-size: 43px;
+	font-weight: 600;
+	font-style: italic;
+	line-height: 1.3;
+	letter-spacing: 0.5px;
+	color: #ac916b;
+	margin-right: 30px;
+}
+.resvInfo span{
+	font-family: Noto Sans CJK KR;
+	font-size: 40px;
+	line-height: 2.6;
+	letter-spacing: 2.4px;
+	color: #ffffff;
+}
+#autoHome .notice{
+	margin-top: 80px;
+	font-family: Noto Sans CJK KR;
+	font-size: 40px;
+	letter-spacing: 3.5px;
+	color: #fddd19;
+}
+
+.prevNext{
+  margin: 170px 100px;
+}
+.prevNext div{
+  display: inline-block;
+  cursor: pointer;
+}
+.goPrev{
+  float: left;
+  padding-left: 60px;
+	font-family: Core Gothic D;
+	font-size: 35px;
+	font-weight: 500;
+	line-height: 3.6;
+	letter-spacing: 2.6px;
+	color: #ffffff;
+}
+
+.bodyBackWrapper{
+  z-index: -1;
+  width: 100%;
+  height: 1180px;
+  background-image: url('../images/resvBg.png');
+  background-size: 100%;
+  background-repeat: no-repeat;
+  position: fixed;
+  top: 0;
+  opacity: 0.2;
+}
+.bodyBackWrapper.gradation{
+  background-image: url('../images/gradation.png');
+  background-position: 0 416px;
+  opacity: 1;
+}

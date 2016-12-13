@@ -1,6 +1,13 @@
 $(document).ready(function(){
   var params = getQueryParams(document.URL);
-  var dateInfo = params.mm+"월 "+params.dd+"일 "+params.word+", "
+  var dateInfo = params.mm+"월 "+params.dd+"일 "+params.word+", "+params.dayNight+" "+params.time+"시";
+  $('.movieInfo').text(dateInfo);
+  $('input[name=dateInfo]').val(dateInfo);
+  $('.movieUnit').click(function(){
+    if($(this).attr('movieUrl'))
+      changeMovieVideo($(this).attr('movieUrl'));
+  });
+  $("body").smoothWheel();
 });
 
 function getQueryParams(qs) {
@@ -16,4 +23,8 @@ function getQueryParams(qs) {
   }
 
   return params;
+}
+
+function changeMovieVideo(url){
+  $('iframe').attr('src',url);
 }

@@ -43,18 +43,20 @@ $(document).ready(function(){
   }
   $('.timeList select').change(function(){
     $('#resvForm input[name=time]').val($(this).val());
-  })
+  });
+
+  $('#resvForm input[name=dayNight]').val('낮');
 
   $('.dayNight').click(function(){
     if($(this).hasClass('day')){
       $(this).removeClass('day');
       $(this).addClass('night');
-      $('#resvForm input[name=dayNight]').val('night');
+      $('#resvForm input[name=dayNight]').val('저녁');
     }
     else{
       $(this).removeClass('night');
       $(this).addClass('day');
-      $('#resvForm input[name=dayNight]').val('day');
+      $('#resvForm input[name=dayNight]').val('낮');
     }
   })
 });
