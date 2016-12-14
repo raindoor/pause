@@ -82,6 +82,9 @@ body{
 .backImagesDiv img{
 	position: absolute;
 }
+.backImagesDiv img.hidden{
+	display: none;
+}
 
 .backImagesDiv.idx0 img.idx0{ left : 78px; 	 top: 906px; width: 500px;}
 .backImagesDiv.idx0 img.idx1{ left : 837px;  top: 53px;	 width: 500px;}
