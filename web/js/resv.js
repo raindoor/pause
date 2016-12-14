@@ -25,7 +25,7 @@ $(document).ready(function(){
 
   });
 
-  $('.selectDate div').click(function(){
+  $('.selectDate div[data-value]').click(function(){
     $('.selectDate .selected').removeClass('selected');
     $(this).addClass('selected');
     var add = parseInt($(this).attr('data-value'));
@@ -46,6 +46,7 @@ $(document).ready(function(){
   });
 
   $('#resvForm input[name=dayNight]').val('낮');
+  $('#resvForm input[name=time]').val('1');
 
   $('.dayNight').click(function(){
     if($(this).hasClass('day')){

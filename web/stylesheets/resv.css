@@ -10,7 +10,7 @@ body{
 }
 
 #Resv .mainTitle p{
-	font-family: 태-영화체 ;
+	font-family: 태-영화체;
 	font-size: 53px;
 	font-weight: 100;
 	line-height: 1.4;
@@ -82,7 +82,7 @@ body{
   background-color: #c1a283;
 }
 .select .selectTime{
-  margin: 46px auto 0 auto;
+  margin: 117px auto 0 auto;
   width: 390px;
 }
 .select .selectTime > div{
