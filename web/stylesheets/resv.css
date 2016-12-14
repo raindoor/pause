@@ -10,7 +10,7 @@ body{
 }
 
 #Resv .mainTitle p{
-	font-family: 태-영화체;
+	font-family: TSTMovRO;
 	font-size: 53px;
 	font-weight: 100;
 	line-height: 1.4;
@@ -45,14 +45,14 @@ body{
 
 }
 .select .intro{
-	font-family: 태-영화체;
+	font-family: TSTMovRO;
 	font-size: 40px;
 	letter-spacing: 3.8px;
 	text-align: center;
 	color: #ffffff;
 }
 .select .step{
-	font-family: 태-영화체;
+	font-family: TSTMovRO;
 	font-size: 30px;
 	letter-spacing: 3px;
 	color: #c1a283;
@@ -67,7 +67,7 @@ body{
   border: solid 1px #c1a283;
   border-radius: 60px;
   display: inline-block;
-	font-family: 태-영화체;
+	font-family: TSTMovRO;
 	font-size: 28px;
   line-height: 53px;
 	letter-spacing: 2.3px;
@@ -169,8 +169,12 @@ body{
 	font-style: italic;
 	letter-spacing: 0.9px;
 	text-align: center;
+  -webkit-transition: .2s;
 }
-
+.select .selectTime .goNext[disabled=disabled]{
+  color: transparent;
+  background-color: transparent;
+}
 
 .bodyBackWrapper{
   z-index: -1;
@@ -261,7 +265,3 @@ body{
 .idx8{ top: 441px; left: 71.5vw; width: 291px;}
 .idx9{ top: 622px; left: 67.5vw; width: 191px;}
 .idx0{ top: 639px; left: 55.3vw; width: 292px;}
-
-.index footer{
-  margin-top: 53px;
-}

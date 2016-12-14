@@ -1,5 +1,5 @@
 $(document).ready(function(){
-
+  checkFormValid();
   $(".tile").each(function(i){
     //  $(this).css("-webkit-transform", "translateZ(" + e[i]*1 + "px)")
             // .css("z-index", e[i])
@@ -36,6 +36,7 @@ $(document).ready(function(){
     $('#resvForm input[name=mm]').val(curDate.getMonth()+1);
     $('#resvForm input[name=dd]').val(curDate.getDate());
     $('#resvForm input[name=word]').val($(this).text());
+    checkFormValid();
   })
   for(var i=1; i<13; i++){
     var option = $('<option value='+i+'>'+i+'시</option>');
@@ -43,6 +44,7 @@ $(document).ready(function(){
   }
   $('.timeList select').change(function(){
     $('#resvForm input[name=time]').val($(this).val());
+    checkFormValid();
   });
 
   $('#resvForm input[name=dayNight]').val('낮');
@@ -61,3 +63,20 @@ $(document).ready(function(){
     }
   })
 });
+
+function checkFormValid(){
+  var isValid = true;
+  var targetBtn = $('#resvForm .goNext');
+  $('#resvForm input').each(function(){
+    if(!$(this).val()) {
+      isValid = false;
+      console.log('ho');
+    }
+  });
+  if(isValid){
+    $(targetBtn).removeAttr('disabled');
+  }
+  else{
+    $(targetBtn).attr('disabled',true);
+  }
+}

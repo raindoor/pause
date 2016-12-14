@@ -54,7 +54,7 @@
   display: inline-block;
   margin: 0 0 20px 10px;
 }
-.selectMovie div{
+.selectMovie > div{
   padding: 0 10px !important;
 }
 .selectMovie .movieUnit{
@@ -67,37 +67,28 @@
   background-repeat: no-repeat;
   background-size: 100%;
 	cursor: pointer;
+	font-family: Noto Sans CJK KR;
+	font-size: 29px;
+	font-weight: 500;
+	color: #ffffff;
+	white-space: pre;
+	padding-top: 68px;
 }
 .selectMovie .movieUnit.big{
+	line-height: 240px;
   height: 374px;
 }
 
 .movieUnit.idx1 { background-image: url("../images/resv/1/1-large1.png"); }
-.movieUnit.idx2 { background-image: url("../images/resv/1/1.png"); }
-.movieUnit.idx3 { background-image: url("../images/resv/1/2.png"); }
-.movieUnit.idx4 { background-image: url("../images/resv/1/3.png"); }
-.movieUnit.idx5 { background-image: url("../images/resv/1/4.png"); }
-.movieUnit.idx6 { background-image: url("../images/resv/1/5.png"); }
-.movieUnit.idx7 { background-image: url("../images/resv/1/6.png"); }
+.movieUnit.idx2 { background-image: url("../images/resv/1/1-1.png"); }
+.movieUnit.idx3 { background-image: url("../images/resv/1/1-2.png"); }
+.movieUnit.idx4 { background-image: url("../images/resv/1/1-3.png"); }
+.movieUnit.idx5 { background-image: url("../images/resv/1/1-4.png"); }
+.movieUnit.idx6 { background-image: url("../images/resv/1/1-5.png"); }
+.movieUnit.idx7 { background-image: url("../images/resv/1/1-6.png"); }
 .movieUnit.idx8 { background-image: url("../images/resv/1/1-large2.png"); }
-.movieUnit.idx9 { background-image: url("../images/resv/1/7.png"); }
-.movieUnit.idx10{ background-image: url("../images/resv/1/8.png"); }
-
-.pausePick{
-  float: right;
-  display: inline-block;
-	font-family: Lato;
-	font-size: 28px;
-	font-weight: 600;
-	font-style: italic;
-  margin: 12px 8px 0 0;
-}
-.heart{
-  width: 41px;
-  height: 38px;
-  float: right;
-  margin: 15px 8px 0 0;
-}
+.movieUnit.idx9 { background-image: url("../images/resv/1/1-7.png"); }
+.movieUnit.idx10{ background-image: url("../images/resv/1/1-8.png"); }
 
 .selectedMovieWrapper{
   margin-top: 140px;
@@ -123,9 +114,12 @@
 .prevNext{
   margin: 170px 100px;
 }
-.prevNext div{
+.prevNext .goPrev,
+.prevNext .goNext{
   display: inline-block;
   cursor: pointer;
+	background-repeat: no-repeat;
+	background-size: 49px;
 }
 .goPrev{
   float: left;
@@ -136,6 +130,8 @@
 	line-height: 3.6;
 	letter-spacing: 2.6px;
 	color: #ffffff;
+	background-image: url('../images/goLeft.png');
+	background-position: left center;
 }
 .goNext{
   float: right;
@@ -148,6 +144,8 @@
 	color: #ac916b;
 	background-color: transparent;
 	border: 0;
+	background-image: url('../images/goRight.png');
+	background-position: right center;
 }
 
 .bodyBackWrapper{

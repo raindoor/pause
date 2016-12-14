@@ -27,7 +27,7 @@
 }
 .mainTitle pre,
 .mainTitle p{
-	font-family: 태-영화체;
+	font-family: TSTMovRO;
 	font-size: 53px;
 	font-weight: 100;
 	line-height: 1.4;
@@ -191,7 +191,7 @@
 	line-height: 70px;
 	color: black;
 	text-align: center;
-	font-family: 태-영화체;
+	font-family: TSTMovRO;
 	font-size: 26px;
 	font-weight: 500;
 	background-color: #ffe825;

@@ -1,6 +1,8 @@
 var cnt = 2;
 var changeTimer;
+
 (function($) {
+
   changeTimer = setInterval(changeIntroWord , 700);
 
 })(jQuery);
@@ -11,8 +13,7 @@ function changeIntroWord(){
     location.href = 'main.html';
     return;
   }
-  console.log(cnt);
-  $('.wordContainer h1').hide();
+  $('.wordContainer > div').hide();
   $('.wordContainer .word'+cnt).show();
   cnt++;
 }
