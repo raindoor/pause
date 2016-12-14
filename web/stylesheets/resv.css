@@ -82,7 +82,7 @@ body{
   background-color: #c1a283;
 }
 .select .selectTime{
-  margin: 117px auto 0 auto;
+  margin: 63px auto 0 auto;
   width: 390px;
 }
 .select .selectTime > div{
@@ -261,3 +261,7 @@ body{
 .idx8{ top: 441px; left: 71.5vw; width: 291px;}
 .idx9{ top: 622px; left: 67.5vw; width: 191px;}
 .idx0{ top: 639px; left: 55.3vw; width: 292px;}
+
+.index footer{
+  margin-top: 53px;
+}
