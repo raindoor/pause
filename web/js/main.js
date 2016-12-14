@@ -68,6 +68,9 @@ var i = 0;
 var j = 0;
 var isIInterval = false;
 var isJInterval = false;
+
+var myInterval;
+
 $(document).ready(function(){
   menuMouseOut();
   $(".mainMenu").each(function(index){
@@ -80,12 +83,17 @@ function menuMouseOver(index){
   var target = $('.backImagesDiv.idx'+index/2);
   $(target).css('display','block');
   isIInterval = true;
-  appendImage(target, index);
-}
-function menuMouseOut(){
-  isJInterval = false;
+
   i = 0;
   j = 0;
+  myInterval = setInterval(function(){
+    appendImage(target, index);
+  },200);
+
+}
+function menuMouseOut(){
+  clearInterval(myInterval);
+  isJInterval = false;
   $('.backImagesDiv').css('display','none');
   $('.backImagesDiv img.dynamic').remove();
 }
@@ -118,18 +126,17 @@ function appendImage(target, index){
   else flag++;
   if(flag < 2){
     i++;
-    setTimeout(function(){
-      appendImage(target, index);
-    },200);
+    // setTimeout(function(){
+    //   appendImage(target, index);
+    // },200);
   }
   else{
-    isIInterval = false;
+    return false;
   }
 }
 
 function appendImageLast(target, index){
   if(!isJInterval) return;
-  console.log(j, animInfo[index].count);
   if(j < animInfo[index].count){
     var img = $('<img class="dynamic" src="'+animInfo[index].imgSrc+'"/>');
     $(img).css('top', animInfo[index].startTop +
