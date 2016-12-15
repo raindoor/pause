@@ -2,7 +2,7 @@ body{
   overflow-y: hidden;
 }
 #Resv{
-	margin: 214px 0 80px 0;
+	margin: 164px 0 80px 0;
 	padding: 150px 0 0 0;
 	font-family: Noto Sans CJK KR;
 	color: white;
@@ -61,15 +61,15 @@ body{
   margin: 60px auto 0 auto;
 }
 .select .selectDate div{
-  width: 180px;
-  height: 60px;
+  width: 160px;
+  height: 40px;
   margin: 0 20px;
   border: solid 1px #c1a283;
   border-radius: 60px;
   display: inline-block;
 	font-family: TSTMovRO;
 	font-size: 28px;
-  line-height: 53px;
+  line-height: 32px;
 	letter-spacing: 2.3px;
   cursor: pointer;
   -webkit-transition: .2s;
@@ -227,6 +227,7 @@ body{
     width: 100vw;
     position: fixed;
     top: 0px;
+    z-index: -1;
 }
 
 #planeRotate {
