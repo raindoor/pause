@@ -146,7 +146,7 @@
     </div>
     <div class="container selectedMovieWrapper">
       <div class="row">
-        <iframe width="1140" height="667" src="https://www.youtube.com/embed/V3-a58Wt2tk" frameborder="0" allowfullscreen></iframe>
+        <iframe width="1150" height="667" src="https://www.youtube.com/embed/V3-a58Wt2tk" frameborder="0" allowfullscreen></iframe>
       </div>
     </div>
     <div class="container selectedMovieInfo">
@@ -163,56 +163,76 @@
         <span class="movieDiscription"></span>
       </div>
     </div>
-    <div class="container selectGoodsAndSnacks">
+    <div class="container selectDrinkAndSnacks">
       <div class="row text-left">
-        <span class="guide">아늑한 관람을 도와줄 친구들을 선택하세요</span>
+        <span class="guide">아늑한 관람을 도와줄 간식을 선택하세요</span>
       </div>
-      <div class="row goods text-left">
-        <span class="title">Goods</span>
-      </div>
-      <div class="row options">
-        <div class="col-xs-3">
-          <img src="../images/resvOption/opt1.png" />
+      <div class="row text-left drinkAndSnacks">
+        <div class="col-xs-6 drink">
+          <span class="title">음료</span>
+          <div class="row options">
+            <div class="col-xs-3">
+              <div class="img idx1">
+                <p class="optionName">
+                  코코아
+                </p>
+              </div>
+            </div>
+            <div class="col-xs-3">
+              <div class="img idx2">
+                <p class="optionName">
+                  커피
+                </p>
+              </div>
+            </div>
+            <div class="col-xs-3">
+              <div class="img idx3">
+                <p class="optionName">
+                  유자차
+                </p>
+              </div>
+            </div>
+            <div class="col-xs-3">
+              <div class="img idx4">
+                <p class="optionName">
+                  우유
+                </p>
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="col-xs-3">
-          <img src="../images/resvOption/opt2.png" />
-        </div>
-        <div class="col-xs-3">
-          <img src="../images/resvOption/opt3.png" />
-        </div>
-        <div class="col-xs-3">
-          <img src="../images/resvOption/opt4.png" />
-        </div>
-      </div>
-      <div class="row snacks text-left">
-        <span class="title">Snacks</span>
-      </div>
-      <div class="row options">
-        <div class="col-xs-3">
-          <img src="../images/resvOption/opt1.png" />
-        </div>
-        <div class="col-xs-3">
-          <img src="../images/resvOption/opt2.png" />
-        </div>
-        <div class="col-xs-3">
-          <img src="../images/resvOption/opt3.png" />
-        </div>
-        <div class="col-xs-3">
-          <img src="../images/resvOption/opt4.png" />
-        </div>
-      </div>
-      <div class="row options">
-        <div class="col-xs-3">
-          <img src="../images/resvOption/opt5.png" />
-        </div>
-        <div class="col-xs-3">
-          <img src="../images/resvOption/opt6.png" />
-        </div>
-        <div class="col-xs-3">
-          <img src="../images/resvOption/opt7.png" />
-        </div>
-        <div class="col-xs-3">
-          <img src="../images/resvOption/opt8.png" />
+        <div class="col-xs-5 col-xs-offset-1 snacks">
+          <span class="title">주전부리</span>
+          <div class="row options">
+            <div class="col-xs-3">
+              <div class="img idx5">
+                <p class="optionName">
+                  단과자
+                </p>
+              </div>
+            </div>
+            <div class="col-xs-3">
+              <div class="img idx6">
+                <p class="optionName">
+                  초콜렛
+                </p>
+              </div>
+            </div>
+            <div class="col-xs-3">
+              <div class="img idx7">
+                <p class="optionName">
+                  짠과자
+                </p>
+              </div>
+            </div>
+            <div class="col-xs-3">
+              <div class="img idx8">
+                <p class="optionName">
+                  귤
+                </p>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -222,8 +242,9 @@
           이전
         </div>
       </a>
-      <form action="resv3.html">
+      <form class="resv3Form" action="resv3.html">
         <input type="hidden" name="dateInfo" />
+        <input type="hidden" name="options" />
         <button type="submit" class="goNext">
           다음
         </div>

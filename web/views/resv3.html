@@ -14,6 +14,7 @@
   <link rel="stylesheet" type="text/css" href="../stylesheets/footer.css" />
   <link rel="stylesheet" type="text/css" href="../stylesheets/resv3.css" />
   <script src="../js/jquery.min.js"></script>
+  <script src="../js/jquery.smoothWheel.js"></script>
   <script src="../js/bootstrap.min.js"></script>
   <script src="../js/resv3.js"></script>
 </head>
@@ -53,11 +54,7 @@
       <div class="active"></div>
     </div>
     <div class="movieInfoDiv">
-      <p class="movieInfo">12월 14일 오늘, 저녁 7시</p>
-      <p class="afterMovieInfo">
-        <span class="name">유다정</span>
-        <span>회원 님의 발권내용입니다.</span>
-      </p>
+      <span class="movieInfo">예매가 완료되었습니다!</span>
     </div>
   </section>
 
@@ -66,45 +63,47 @@
     <div class="container">
       <div class="ticketBorder"></div>
       <div class="row">
-        <div class="col-xs-5 col-xs-offset-1 movieImg">
-          <img src="../images/resv/1/8.png" class="movieCapture" />
+        <div class="col-xs-6 movieImg">
+          <img src="../images/resv/1/1-large1.png" class="movieCapture" />
         </div>
         <div class="col-xs-6 movieInfo text-left">
-          <p class="movieTitleKr">
-            대니쉬 걸
+          <p class="movieDate">
+            12월 14일 오늘 저녁 7시
           </p>
-          <p class="movieTitleEn">
-            Danish Girl
-          </p>
+          <span class="movieTitleKr">
+            인셉션
+          </span>
+          <span class="movieTitleEn">
+            Inception
+          </span>
           <p class="movieShortInfo">
+            <span class="duringTime">1시간 20분</span>
             <span class="year">2015</span>
-            <span class="duringTime">1h 20m</span>
+            <span class="director">크리스토퍼 놀란</span>
+          </p>
+          <p class="movieOptions">
+            <span class="title">음료</span>
+            <span class="content">커피</span>
+            <span class="title">주전부리</span>
+            <span class="content last">초콜렛</span>
           </p>
         </div>
       </div>
-      <div class="ticketBorder"></sdiv>
-    </div>
-    <div class="container resvInfo text-left">
-      <div class="row">
-        <div class="col-xs-6 first">
-          <span class="resvUnit resvId">ID</span>
-          <span>루비</span>
-        </div>
-        <div class="col-xs-6">
-          <span class="resvUnit resvRoomNo">Room no.</span>
-          <span>45</span>
-        </div>
+      <div class="ticketBorder"></div>
+      <div class="row movieQuote">
+        <div><img src="../images/intro/comma1.png" class="comma1"/></div>
+        <p class="quoteEng">You're waiting for a train. A train that will take you far away.</p>
+        <p class="quoteEng">You know where you hope this train will take you, but you can't be sure.</p>
+        <p class="quoteEng">But it doesn't matter. Because we'll be together</p>
+        <div class="row">&nbsp;</div>
+        <div class="row">&nbsp;</div>
+        <p class="quoteKor">기차를 기다리고 있어. 아주 멀리멀리 가는 기차야.</p>
+        <p class="quoteKor">기차가 멀리 간다는건 아는데, 어디로 가는건지는 확실하지 않아.</p>
+        <p class="quoteKor">하지만, 그건 중요하지 않아. 사랑하는 사람과 함께 있으니까.</p>
+
+        <div><img src="../images/intro/comma2.png" class="comma2"/></div>
       </div>
-      <div class="row">
-        <div class="col-xs-6 first">
-          <span class="resvUnit resvGoods">Goods</span>
-          <span>목베개 담요</span>
-        </div>
-        <div class="col-xs-6">
-          <span class="resvUnit resvSnacks">Snacks</span>
-          <span>초콜렛 코코아 귤</span>
-        </div>
-      </div>
+      <div class="ticketBorder"></div>
     </div>
   </section>
   <section id="autoHome" class="text-center">
@@ -112,17 +111,13 @@
       <span class="time">20</span>초 후에 자동으로 홈으로 이동합니다.
     </p>
     <div class="prevNext">
-      <a href="resv2.html">
+      <a href="#">
         <div class="goPrev">
           이전
         </div>
       </a>
     </div>
   </section>
-  <div class="bodyBackWrapper">
-  </div>
-  <div class="bodyBackWrapper gradation">
-  </div>
   <footer>
     <span class="copyright">©</span>
     <span>pause</span>

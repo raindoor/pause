@@ -47,12 +47,12 @@
 }
 .guide{
 	font-family: Core Gothic D;
-	font-size: 38px;
+	font-size: 34px;
 	font-weight: 500;
 	letter-spacing: 2.2px;
 	color: #ac916b;
   display: inline-block;
-  margin: 0 0 20px 10px;
+  margin: 0 0 50px 15px;
 }
 .selectMovie > div{
   padding: 0 10px !important;
@@ -135,34 +135,87 @@
   margin-top: 140px;
 }
 
-.selectedMovieInfo{
+.selectedMovieInfo > div.row{
 	padding: 0 15px;
 }
 .selectedMovieInfo span{
-	margin-right: 40px;
+	margin: 0 40px 30px 0;
 	font-family: Noto Sans CJK KR;
 	font-size: 22px;
+	display: inline-block;
 }
 .selectedMovieInfo .movieTitle{
 	font-size: 30px;
+	margin-top: 90px;
+}
+.selectedMovieInfo .movieDiscription{
+	margin-right: 0;
 }
 
-.selectGoodsAndSnacks{
-  margin-top: 140px;
+.selectDrinkAndSnacks{
+  margin-top: 70px;
 }
-.goods, .snacks{
-	font-family: Lucida Bright;
-	font-size: 48.4px;
-	font-weight: 600;
-	font-style: italic;
-	line-height: 1.3;
-	letter-spacing: 0.5px;
-  margin-top: 100px;
+.drink   .title,
+.snacks  .title{
+	margin-top: 30px;
+	font-family: Noto Sans CJK KR;
+	font-size: 30px;
+	font-weight: 500;
+	color: #c09b62;
+	padding: 0;
 }
-.options img{
+.drink  .options,
+.snacks .options{
+	margin-top: 35px;
+	padding-right: 140px;
+}
+.snacks .options{
+	padding-right: 45px;
+}
+.optionName{
+	font-family: Noto Sans CJK KR;
+	font-size: 23px;
+	color: #ffffff;
+	text-align: center;
+	margin-top: 20px;
+  line-height: 250px;
+}
+
+.options .img{
   width: 100%;
   cursor: pointer;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 85px;
+	height: 85px;
+	line-height: 85px;
 }
+
+.options .img.idx1{ background-image: url("../images/resvOption/opt1.png"); }
+.options .img.idx2{ background-image: url("../images/resvOption/opt2.png"); }
+.options .img.idx3{ background-image: url("../images/resvOption/opt3.png"); }
+.options .img.idx4{ background-image: url("../images/resvOption/opt4.png"); }
+.options .img.idx5{ background-image: url("../images/resvOption/opt5.png"); }
+.options .img.idx6{ background-image: url("../images/resvOption/opt6.png"); }
+.options .img.idx7{ background-image: url("../images/resvOption/opt7.png"); }
+.options .img.idx8{ background-image: url("../images/resvOption/opt8.png"); }
+.options .img.idx1:hover,
+.options .img.idx1.active{background-image: url("../images/resvOption/opt1d.png"); }
+.options .img.idx2:hover,
+.options .img.idx2.active{background-image: url("../images/resvOption/opt2d.png"); }
+.options .img.idx3:hover,
+.options .img.idx3.active{background-image: url("../images/resvOption/opt3d.png"); }
+.options .img.idx4:hover,
+.options .img.idx4.active{background-image: url("../images/resvOption/opt4d.png"); }
+.options .img.idx5:hover,
+.options .img.idx5.active{background-image: url("../images/resvOption/opt5d.png"); }
+.options .img.idx6:hover,
+.options .img.idx6.active{background-image: url("../images/resvOption/opt6d.png"); }
+.options .img.idx7:hover,
+.options .img.idx7.active{background-image: url("../images/resvOption/opt7d.png"); }
+.options .img.idx8:hover,
+.options .img.idx8.active{background-image: url("../images/resvOption/opt8d.png"); }
+
 .prevNext{
   margin: 170px 100px;
 }
@@ -184,6 +237,7 @@
 	color: #ffffff;
 	background-image: url('../images/goLeft.png');
 	background-position: left center;
+	margin-bottom: 10px;
 }
 .goNext{
   float: right;

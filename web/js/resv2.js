@@ -78,7 +78,7 @@ $(document).ready(function(){
   var par_time = params.time ? params.time : "";
   var dateInfo = par_mm+"월 "+par_dd+"일 "+par_word+", "+par_dayNight+" "+par_time+"시";
   $('.movieInfo').text(dateInfo);
-  $('input[name=dateInfo]').val(dateInfo);
+  $('input[name=dateInfo]').val(dateInfo.replace(',',''));
   $('.movieUnit').click(function(){
     if($(this).attr('movieUrl'))
       changeMovieVideo($(this).attr('movieUrl'));
@@ -131,8 +131,40 @@ $(document).ready(function(){
   $('.selectedMovieInfo .movieDirector').text(movieInfo[dateType].movieDirector);
   $('.selectedMovieInfo .movieDiscription').text(movieInfo[dateType].movieDiscription);
 
+  $('.drink .options .img').click(function(){
+    if($(this).hasClass('active'))
+      $(this).removeClass('active');
+    else{
+      $('.drink .options .img.active').removeClass('active');
+      $(this).addClass('active');
+    }
+    checkValueisValid();
+  });
+  $('.snacks .options .img').click(function(){
+    if($(this).hasClass('active'))
+      $(this).removeClass('active');
+    else{
+      $('.snacks .options .img.active').removeClass('active');
+      $(this).addClass('active');
+    }
+    checkValueisValid();
+  });
+  $('.resv3Form').hide();
   $("body").smoothWheel();
 });
+
+function checkValueisValid(){
+  if($('.options .img.active').size() == 2){
+    $('.resv3Form').show();
+    var temp = "";
+    $('.options .img.active p').each(function(){
+      temp += temp == "" ? $(this).text().trim() : "/"+$(this).text().trim();
+    });
+    $('input[name=options]').val(temp);
+  }
+  else
+    $('.resv3Form').hide();
+}
 
 function getQueryParams(qs) {
 

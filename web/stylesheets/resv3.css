@@ -25,13 +25,15 @@
 }
 .movieInfoDiv .movieInfo{
 	height: 49px;
-	font-family: Core Gothic D;
+	font-family: TSTMovRO;
 	font-size: 50px;
 	font-weight: 300;
 	line-height: 1.3;
 	letter-spacing: 4px;
 	text-align: center;
 	color: #ffffff;
+	display: inline-block;
+	margin-top: 50px;
 }
 .movieInfoDiv .afterMovieInfo span{
 	display: inline-block;
@@ -53,7 +55,7 @@
 .ticketBorder{
 	height: 13px;
 	border: solid 2px #ac916b;
-	margin: 60px 0;
+	margin: 100px 0;
 }
 .movieImg{
 	padding: 0 20px;
@@ -66,59 +68,77 @@
 .movieInfo{
 	padding-left: 30px;
 }
+.movieInfo .movieDate{
+	font-family: Noto Sans CJK kr;
+	font-size: 44px;
+	color: #ac916b;
+	margin: 15px 0 45px 0;
+}
 .movieInfo .movieTitleKr{
 	font-family: Noto Sans CJK KR thin;
-	font-size: 70px;
+	font-size: 48px;
 	line-height: 1.3;
 	letter-spacing: 5.6px;
+	margin-right: 30px;
 }
 .movieInfo .movieTitleEn{
 	font-family: Lato;
-	font-size: 45px;
+	font-size: 48px;
 	font-weight: 300;
 	font-style: italic;
 	line-height: 2;
 	letter-spacing: 3.8px;
 }
 .movieInfo .movieShortInfo{
-	margin: 40px 0 0 0;
+	margin: 0px 0 55px 0;
 }
 .movieInfo .movieShortInfo span{
-	font-family: Lato;
-	font-size: 45px;
+	font-family: Noto Sans CJK KR;
+	font-size: 32px;
 	font-weight: 300;
-	font-style: italic;
+	margin-right: 50px;
 	letter-spacing: 0.5px;
+}
+.movieInfo .movieShortInfo .director{
+	margin-right: 0;
+}
+.movieInfo .movieOptions span{
+	font-family: Noto Sans CJK KR;
+	font-size: 37px;
+	font-weight: 300;
+	margin-right: 70px;
+	letter-spacing: 0.5px;
+}
+.movieInfo .movieOptions .title{
+	margin-right: 34px;
 	color: #ac916b;
 }
-.movieInfo .movieShortInfo .year{
-	margin-right: 70px;
+.movieInfo .movieOptions .last{
+	margin-right: 0;
 }
-#ResvInfo{
-	padding: 80px 0;
+.movieQuote .comma1{
+	margin-top: -20px;
+	margin-bottom: 60px;
 }
-.resvInfo .row > div{
-	padding-left: 0px;
+.movieQuote .comma2{
+	margin-bottom: -20px;
+	margin-top: 60px;
 }
-.resvInfo .row > div.first{
-	padding-left: 130px;
-}
-.resvInfo .resvUnit{
-	font-family: Lucida Bright;
-	font-size: 43px;
-	font-weight: 600;
+.movieQuote .quoteEng{
+	font-family: Lobster Two;
+	font-size: 38px;
+	font-weight: bold;
 	font-style: italic;
 	line-height: 1.3;
-	letter-spacing: 0.5px;
-	color: #ac916b;
-	margin-right: 30px;
 }
-.resvInfo span{
-	font-family: Noto Sans CJK KR;
-	font-size: 40px;
-	line-height: 2.6;
-	letter-spacing: 2.4px;
-	color: #ffffff;
+.movieQuote .quoteKor{
+	font-family: Noto Sans CJK kr;
+	font-size: 24px;
+	line-height: 1.5;
+}
+
+#ResvInfo{
+	padding: 80px 0;
 }
 #autoHome .notice{
 	margin-top: 80px;
@@ -134,6 +154,8 @@
 .prevNext div{
   display: inline-block;
   cursor: pointer;
+	background-repeat: no-repeat;
+	background-size: 49px;
 }
 .goPrev{
   float: left;
@@ -144,21 +166,7 @@
 	line-height: 3.6;
 	letter-spacing: 2.6px;
 	color: #ffffff;
-}
-
-.bodyBackWrapper{
-  z-index: -1;
-  width: 100%;
-  height: 1180px;
-  background-image: url('../images/resvBg.png');
-  background-size: 100%;
-  background-repeat: no-repeat;
-  position: fixed;
-  top: 0;
-  opacity: 0.2;
-}
-.bodyBackWrapper.gradation{
-  background-image: url('../images/gradation.png');
-  background-position: 0 416px;
-  opacity: 1;
+	background-image: url('../images/goLeft.png');
+	background-position: left center;
+	margin-bottom: 10px;
 }
