@@ -88,8 +88,10 @@ $(document).ready(function(){
     case "내일":
       $('.movieUnit').each(function(idx){
         dateType = 1;
-        if(idx == 0)
+        if(idx == 0){
           $(this).attr('movieUrl','https://www.youtube.com/embed/IkF3M_FE4MM').click();
+          $(this).addClass('active');
+        }
         $(this).text(movieInfo[dateType].text[idx]);
         $(this).css('background-image','url('+movieInfo[dateType].url[idx]+')');
       });
@@ -99,8 +101,10 @@ $(document).ready(function(){
         dateType = 2;
         if(idx == 3)
           $(this).css('padding-top','50px');
-        if(idx == 0)
+        if(idx == 0){
           $(this).attr('movieUrl','https://www.youtube.com/embed/vU29VfayDMw').click();
+          $(this).addClass('active');
+        }
         $(this).text(movieInfo[dateType].text[idx]);
         $(this).css('background-image','url('+movieInfo[dateType].url[idx]+')');
       });
@@ -110,8 +114,10 @@ $(document).ready(function(){
         dateType = 0;
         if(idx == 3 || idx == 5)
           $(this).css('padding-top','50px');
-        else if(idx == 0)
+        else if(idx == 0){
           $(this).attr('movieUrl','https://www.youtube.com/embed/V3-a58Wt2tk').click();
+          $(this).addClass('active');
+        }
         $(this).text(movieInfo[dateType].text[idx]);
         $(this).css('background-image','url('+movieInfo[dateType].url[idx]+')');
       });
