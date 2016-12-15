@@ -1,6 +1,9 @@
 body{
 	background-color: #000;
 	font-family: Lato;
+	background-image: url("../images/introBg1.png");
+	background-repeat: no-repeat;
+	background-size: 1920px 993px;
 }
 .introContainer{
   padding: 0;

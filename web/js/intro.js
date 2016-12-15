@@ -14,6 +14,7 @@ function changeIntroWord(){
     return;
   }
   $('.wordContainer > div').hide();
+  $('body').css('background-image','url("../images/introBg3.png")');
   $('.wordContainer .word'+cnt).show();
   cnt++;
 }
