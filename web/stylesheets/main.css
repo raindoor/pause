@@ -2,6 +2,7 @@ body{
 	background-color: #000;
 	font-family: Lobster Two;
   padding: 0;
+	overflow: hidden;
 }
 .mainContainer{
   padding: 0;
