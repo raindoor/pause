@@ -70,7 +70,7 @@
 }
 
 #ProgContent .title.titleRight span{
-	margin-top: -60px;
+	margin-top: -30px;
 	line-height: 0px;
 }
 
@@ -91,7 +91,6 @@
 	font-size: 52px;
 	font-weight: normal;
 	line-height: 1.5;
-	letter-spacing: 3.9px;
 }
 #ProgContent .textWrapper .subTitle{
 	font-family: Noto Sans CJK KR;
@@ -101,7 +100,6 @@
 	font-family: Noto Sans CJK KR thin;
 	font-size: 20px;
 	line-height: 1.5;
-	letter-spacing: 1.9px;
 	color: #ffffff;
 	margin: 20px 0;
 }

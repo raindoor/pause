@@ -100,7 +100,7 @@ $(document).ready(function(){
         if(idx == 3)
           $(this).css('padding-top','50px');
         if(idx == 0)
-          $(this).attr('movieUrl','https://www.youtube.com/embed/1Fg5iWmQjwk').click();
+          $(this).attr('movieUrl','https://www.youtube.com/embed/vU29VfayDMw').click();
         $(this).text(movieInfo[dateType].text[idx]);
         $(this).css('background-image','url('+movieInfo[dateType].url[idx]+')');
       });
@@ -111,7 +111,7 @@ $(document).ready(function(){
         if(idx == 3 || idx == 5)
           $(this).css('padding-top','50px');
         else if(idx == 0)
-          $(this).attr('movieUrl','https://www.youtube.com/embed/vU29VfayDMw').click();
+          $(this).attr('movieUrl','https://www.youtube.com/embed/V3-a58Wt2tk').click();
         $(this).text(movieInfo[dateType].text[idx]);
         $(this).css('background-image','url('+movieInfo[dateType].url[idx]+')');
       });
