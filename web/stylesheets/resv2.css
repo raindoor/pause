@@ -94,6 +94,17 @@
   margin-top: 140px;
 }
 
+.selectedMovieInfo{
+	padding: 0 15px;
+}
+.selectedMovieInfo span{
+	margin-right: 40px;
+	font-family: Noto Sans CJK KR;
+	font-size: 22px;
+}
+.selectedMovieInfo .movieTitle{
+	font-size: 30px;
+}
 
 .selectGoodsAndSnacks{
   margin-top: 140px;

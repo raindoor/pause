@@ -4,7 +4,6 @@
 
 #ProgTitle{
 	padding: 270px 0;
-	background-image: url("../images/programs/programs-bg-header.png");
 	background-size: 60%;
 	background-repeat: no-repeat;
 }
@@ -40,34 +39,32 @@
 }
 #ProgContent .title{
 	display: block;
-	border-color: transparent;
-	border-style: solid;
+	border: 0 solid transparent;
 	height: 0px;
 	margin-bottom: 100px;
 }
 #ProgContent .title.titleLeft{
 	border-bottom-color: #ac916b;
-  border-bottom-width: 120px;
-  border-right-width: 60px;
+  border-bottom-width: 60px;
+  border-right-width: 30px;
   float: left;
   width: 45%;
 	margin-right: 55%;
 }
 #ProgContent .title.titleRight{
 	border-top-color: #ac916b;
-  border-top-width: 120px;
-  border-left-width: 60px;
+  border-top-width: 60px;
+  border-left-width: 30px;
   float: right;
   width: 45%;
 	margin-left: 55%;
 }
 #ProgContent .title span{
-	line-height: 120px;
+	line-height: 60px;
 	display: block;
 	font-family: Lato;
-	font-size: 60px;
+	font-size: 35px;
 	font-style: italic;
-	letter-spacing: 4.5px;
 	text-align: center;
 	color: #ffffff;
 }
