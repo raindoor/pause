@@ -88,38 +88,38 @@ $(document).ready(function(){
     case "내일":
       $('.movieUnit').each(function(idx){
         dateType = 1;
+        $(this).css('background-image','url('+movieInfo[dateType].url[idx]+')');
         if(idx == 0){
           $(this).attr('movieUrl','https://www.youtube.com/embed/IkF3M_FE4MM').click();
           $(this).addClass('active');
         }
-        $(this).text(movieInfo[dateType].text[idx]);
-        $(this).css('background-image','url('+movieInfo[dateType].url[idx]+')');
+        $(this).find('.darkWrapper').text(movieInfo[dateType].text[idx]);
       });
       break;
     case "모레":
       $('.movieUnit').each(function(idx){
         dateType = 2;
+        $(this).css('background-image','url('+movieInfo[dateType].url[idx]+')');
         if(idx == 3)
-          $(this).css('padding-top','50px');
+          $(this).find('.darkWrapper').css('top','-15px');
         if(idx == 0){
           $(this).attr('movieUrl','https://www.youtube.com/embed/vU29VfayDMw').click();
           $(this).addClass('active');
         }
-        $(this).text(movieInfo[dateType].text[idx]);
-        $(this).css('background-image','url('+movieInfo[dateType].url[idx]+')');
+        $(this).find('.darkWrapper').text(movieInfo[dateType].text[idx]);
       });
       break;
     default:
       $('.movieUnit').each(function(idx){
         dateType = 0;
+        $(this).css('background-image','url('+movieInfo[dateType].url[idx]+')');
         if(idx == 3 || idx == 5)
-          $(this).css('padding-top','50px');
+          $(this).find('.darkWrapper').css('top','-15px');
         else if(idx == 0){
           $(this).attr('movieUrl','https://www.youtube.com/embed/V3-a58Wt2tk').click();
           $(this).addClass('active');
         }
-        $(this).text(movieInfo[dateType].text[idx]);
-        $(this).css('background-image','url('+movieInfo[dateType].url[idx]+')');
+        $(this).find('.darkWrapper').text(movieInfo[dateType].text[idx]);
       });
       break;
   }
