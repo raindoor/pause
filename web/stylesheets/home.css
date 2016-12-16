@@ -153,9 +153,8 @@
 }
 #Tip .row > div > .description pre{
 	font-family: Noto Sans CJK KR thin;
-	font-size: 25px;
+	font-size: 19px;
 	line-height: 1.5;
-	letter-spacing: 1.6px;
 	text-align: center;
 	color: #ffffff;
 	white-space: pre-line;
