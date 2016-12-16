@@ -48,7 +48,7 @@ var movieInfo = [
     ]
   },
 ]
-var time = 20;
+var time = 7;
 $(document).ready(function(){
   var params = getQueryParams(document.URL);
   $('#ResvInfo .movieDate').text(params.dateInfo);

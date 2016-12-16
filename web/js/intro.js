@@ -3,7 +3,7 @@ var changeTimer;
 
 (function($) {
 
-  changeTimer = setInterval(changeIntroWord , 700);
+  changeTimer = setInterval(changeIntroWord , 2000);
 
 })(jQuery);
 

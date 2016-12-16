@@ -171,11 +171,6 @@ body{
 	text-align: center;
   -webkit-transition: .2s;
 }
-.select .selectTime .goNext[disabled=disabled]{
-  color: transparent;
-  background-color: transparent;
-}
-
 .bodyBackWrapper{
   z-index: -1;
   width: 100%;
